@@ -1,0 +1,24 @@
+html::before {
+    content: ' ';
+    display: block;
+    background-image: url('images/background.png');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: -10;
+}
+
+video {
+    border-radius: 11%;
+    width: 250px;
+}
+
+table {
+    width: 100%;
+}
