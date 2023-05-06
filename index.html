@@ -8,69 +8,82 @@
 </head>
 
 <body>
-  <!-- Music -->
-
-  <table>
-    <tr>
-      <th colspan="2" rowspan="2">
-        <div class="logo">
-          <img src="images/logo.svg">
-        </div>
-      </th>
-    </tr>
-    <tr>
-      <th colspan="2" rowspan="2"></th>
-      <img src="images/music.svg">
-      </th>
-    </tr>
-    <td>
-      <p>小さな恋のうた (Chiisana Koi no Uta)</p>
-      <a href="https://youtu.be/lBxOXJmIZTo" target="_blank">
-        <video controls poster='images/小さな恋のうた.png'>
-          <source src='audio/小さな恋のうた.mp3' type='audio/mp3'>
-        </video>
-      </a>
-    </td>
-    <td> <!-- Song 2-->
-      <p>バレンタイン・キッス (Valentine Kiss)</p>
-      <a href="https://youtu.be/nTPI23Nd0dg" target="_blank">
-        <video controls poster='images/バレンタイン・キッス.png'>
-          <source src="audio/バレンタイン・キッス.mp3" type="audio/mp3">
-        </video>
-      </a>
-    </td>
-    <td> <!-- Song 3-->
-      <p>愛唄 (Ai Uta)</p>
-      <a href="https://youtu.be/SGd9dllIbyY" target="_blank">
-        <video controls poster='images/愛唄.png'>
-          <source src="audio/愛唄.mp3" type="audio/mp3">
-        </video>
-      </a>
-    </td>
-    <td> <!-- Song 4-->
-      <p>君に届け (Kimi ni Todok)</p>
-      <a href="https://youtu.be/3a3iAC2nuYo" target="_blank">
-        <video controls poster='images/君に届け.png'>
-          <source src="audio/君に届け.mp3" type="audio/mp3">
-        </video>
-      </a>
-    </td>
-    <td> <!-- Song 5-->
-      <p>ギフト (Gift)</p>
-      <a href="https://youtu.be/J6WJ7OF0l-g" target="_blank">
-        <video controls poster='images/ギフト.png'>
-          <source src="audio/ギフト.mp3" type="audio/mp3">
-        </video>
-      </a>
-    </td>
-    </tr>
-  </table>
-
-  <!-- Video -->
-  <img src="images/movie.svg">
-  <br>
-  <iframe src="Vilos.html" frameborder="0" style="border: none; width: 640px; height: 360px;"></iframe>
-  <br>
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="images/logo.svg">
+    </div>
+    <!-- Table -->
+    <div class="wrapper">
+      <table>
+        <tr>
+          <!-- Music Logo -->
+          <td colspan="3">
+            <div class="music">
+              <img src="images/music.svg">
+            </div>
+          </td>
+        </tr>
+        <!-- Music -->
+        <tr>
+          <td> <!-- Song 1 -->
+            <p>小さな恋のうた (Chiisana Koi no Uta)</p>
+            <a href="https://youtu.be/lBxOXJmIZTo" target="_blank">
+              <video controls poster='images/小さな恋のうた.png'>
+                <source src='audio/小さな恋のうた.mp3' type='audio/mp3'>
+              </video>
+            </a>
+          </td>
+          <td> <!-- Song 2 -->
+            <p>バレンタイン・キッス (Valentine Kiss)</p>
+            <a href="https://youtu.be/nTPI23Nd0dg" target="_blank">
+              <video controls poster='images/バレンタイン・キッス.png'>
+                <source src="audio/バレンタイン・キッス.mp3" type="audio/mp3">
+              </video>
+            </a>
+          </td>
+          <td> <!-- Song 3 -->
+            <p>愛唄 (Ai Uta)</p>
+            <a href="https://youtu.be/SGd9dllIbyY" target="_blank">
+              <video controls poster='images/愛唄.png'>
+                <source src="audio/愛唄.mp3" type="audio/mp3">
+              </video>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td> <!-- Song 4 -->
+            <p>君に届け (Kimi ni Todok)</p>
+            <a href="https://youtu.be/3a3iAC2nuYo" target="_blank">
+              <video controls poster='images/君に届け.png'>
+                <source src="audio/君に届け.mp3" type="audio/mp3">
+              </video>
+            </a>
+          </td>
+          <td> <!-- Song 5 -->
+            <p>ギフト (Gift)</p>
+            <a href="https://youtu.be/J6WJ7OF0l-g" target="_blank">
+              <video controls poster='images/ギフト.png'>
+                <source src="audio/ギフト.mp3" type="audio/mp3">
+              </video>
+            </a>
+          </td>
+        </tr>
+        <!-- Video -->
+        <tr>
+          <td rowspan="3" colspan="3">
+            <!-- Movie Logo & Link to "Video Player" page-->
+            <a href="Vilos.html" target="_blank">
+              <img src="images/movie.svg">
+            </a>
+            <br>
+            <!-- Video Player iframe-->
+            <iframe src="Vilos.html" frameborder="0" style="border: none; width: 100%; height: 1050px;"></iframe>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
 </body>
 
 </html>

@@ -2,70 +2,28 @@
 <html>
 
 <head>
-  <title>Anime4K Player</title>
+  <title>Video Player</title>
   <script src='Anime4K.js'></script>
   <style>
     body {
-      overscroll-behavior: none;
-      background-color: black;
+      text-align: center;
     }
 
-    .r-mfzc6t,
-    .r-1e6zz2d {
-      background-color: transparent !important;
-      color: transparent !important;
-    }
-
-    #input {
-      position: absolute;
-      z-index: 10;
-    }
-
-    #velocity-canvas {
-      max-height: 100%;
-      max-width: 100%;
-    }
-
-    select {
-      height: 21.5px !important;
-      width: 117.52px !important;
-      margin-left: 0px !important;
+    a {
+      color: black;
     }
   </style>
 </head>
 
-<body onload="onLoad();">
-
-  <div id=input>
-    <select id="selectVideo" onchange="onSelectFile(this)">
-      <option value="">Select Video</option>
-      <option value="video/The Angel Next Door Spoils Me Rotten Opening 1 - Gift.mp4">The Angel Next Door Spoils Me
-        Rotten Opening 1 - Gift.mp4</option>
-      <option value="video/The Angel Next Door Spoils Me Rotten Ending 1 - Chiisana Koi no Uta.mp4">The Angel Next Door
-        Spoils Me Rotten Ending 1 - Chiisana Koi no Uta.mp4</option>
-      <option value="video/The Angel Next Door Spoils Me Rotten Ending 2 - Ai Uta.mp4">The Angel Next Door Spoils Me
-        Rotten Ending 2 - Ai Uta.mp4</option>
-      <option value="video/The Angel Next Door Spoils Me Rotten Ending 3 - Kimi ni Todoke.mp4">The Angel Next Door
-        Spoils Me Rotten Ending 3 - Kimi ni Todoke.mp4</option>
-    </select>
-    <br>
-    <button onclick="toggleCanvas()">Disable Anime4K</button>
-  </div>
-
-  <div id="vilos"></div>
-
-  <script type="text/javascript" src="https://static.crunchyroll.com/vilos-v2/web/vilos/js/bundle.js"
-    charset="utf-8"></script>
-  <script>
-    toggleCanvas();
-    function toggleCanvas() {
-      const canvas = document.querySelector('canvas');
-      canvas.style.display = canvas.style.display === 'none' ? '' : 'none';
-      const button = document.querySelector('button');
-      button.textContent = canvas.style.display === 'none' ? 'Enable Anime4K' : 'Disable Anime4K';
-    }
-  </script>
-
+<body>
+  <!-- Video -->
+  <a href="https://youtu.be/G7v3T5pDj-M" target="_blank">
+    <p>『お隣の天使様』OP映像/OP主題歌「ギフト」オーイシマサヨシ (The Angel Next Door Spoils Me Rotten - Opening | GIFT)</p>
+  </a>
+  <video id="Video" width="854" height="480" src="video/The Angel Next Door Spoils Me Rotten Opening 1 - Gift.mp4"
+    autoplay controls></video>
+  <!-- Draw video on the canvas -->
+  <canvas id="Canvas" width="854" height="480"></canvas>
 </body>
 
 </html>

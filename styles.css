@@ -14,11 +14,23 @@ html::before {
     z-index: -10;
 }
 
-video {
-    border-radius: 11%;
-    width: 250px;
+.container {
+    display: flex;
+}
+
+.logo {
+    width: 30%;
+}
+
+.wrapper {
+    width: 60%;
 }
 
 table {
     width: 100%;
+}
+
+video {
+    border-radius: 11%;
+    width: 250px;
 }
